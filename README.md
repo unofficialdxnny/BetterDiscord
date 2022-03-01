@@ -29,3 +29,9 @@
 - Select an option from the munu
 - Creates a rpc for discord
 
+
+
+## Contributers:
+
+- unofficialdxnny
+- Dx_Deathstrike
