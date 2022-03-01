@@ -11,7 +11,7 @@
 ----
 
 <p align="center">
-    <img src="./images/banner">
+    <img src="https://github.com/unofficialdxnny/BetterDiscord/blob/main/images/banner.jpg?raw=true" width="1000" height="">
 </p>
 
 ----
