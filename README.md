@@ -17,7 +17,7 @@
 ----
 
 <p align="center">
-    <img src="./images/menu">
+    <img src="https://github.com/unofficialdxnny/BetterDiscord/blob/main/images/mainmenu.jpg?raw=true" width="500" height="">
 </p>
 
 
