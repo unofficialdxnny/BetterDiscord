@@ -5,7 +5,7 @@
 ----
 
 <p align="center">
-    <img src="./images/logo">
+    <img src="https://github.com/unofficialdxnny/BetterDiscord/blob/main/images/logo.jpg?raw=true">
 </p>
 
 ----
