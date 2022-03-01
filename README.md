@@ -35,3 +35,12 @@
 
 - unofficialdxnny
 - Dx_Deathstrike
+
+
+## Contributing:
+
+- Clone the repo
+- cd BetterDiscord
+- Add your changes
+- git -add <my new feature>
+- git -push <my new feature>
