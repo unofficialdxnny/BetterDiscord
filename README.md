@@ -3,6 +3,7 @@
 <p align="center">BetterDiscord is a terminal <br> interface where you can make Discord themes quickly with no prior CSS knowledge</p>
 
 Not opensource anymore :(
+I have left a few snippets so you are still able to build your own if you like
 
 ----
 
