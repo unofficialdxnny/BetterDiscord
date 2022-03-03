@@ -6,7 +6,7 @@ Still in progress
 
 source code goes live once ive finished the article explaining it 
 
-<p>src will go live <a href="">HERE</A></p>
+<p>src will go live <a href="https://3kllhk1ibq34qk6sp3bhtox1-wpengine.netdna-ssl.com/wp-content/uploads/2017/12/dogstudio.gif">HERE</A></p>
 ----
 
 <p align="center">
