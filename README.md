@@ -16,7 +16,7 @@ basic source to build your own will go up soon
 ----
 
 <p align="center">
-    <img src="https://github.com/unofficialdxnny/BetterDiscord/blob/main/images/banner.jpg?raw=true" width="1000" height="">
+    <a href="https://github.com/unofficialdxnny/BetterDiscord"><img src="https://github.com/unofficialdxnny/BetterDiscord/blob/main/images/banner.jpg?raw=true" width="1000" height="">
 </p>
 
 ----
