@@ -1,6 +1,6 @@
 <h1 align="center">BetterDiscord</h1>
 
-<p align="center">BetterDiscord is a terminal <br> interface where you can make Discord themes quickly with no prior CSS knowledge</p>
+<p align="center">BetterDiscord is a terminal interface <br> where you can make Discord themes quickly with no prior CSS knowledge</p>
 
 Still in progress
 
