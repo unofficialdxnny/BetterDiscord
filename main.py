@@ -206,6 +206,9 @@ while True:
               sys.stdout.flush()
         print("")
         print_slow('\033[91m  I will guide you through the steps below and give you all possible options')
+
+        os.system("cls")
+        print(banner)
         
         print("")
         RPC.update(state="Workspace: " + name + ".css", details="By unofficialdxnny", large_image="https://imgur.com/FtuQIfw.jpg", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
@@ -219,6 +222,10 @@ while True:
 
         print("")
         print("Importing Necaserry Libraries... ")
+
+        os.system("cls")
+        print(banner)
+
 
         print("")
         with open(name + '.css', 'a') as f:
@@ -252,12 +259,7 @@ button {
             print("")
 
 
-        font = input("Enter font name : ")
-            
-        family = input("Enter the font family : ")
-        
-        file.write(f"--font-primary: {font}, {family};"),
-
+      
 
 
         time.sleep(5)
