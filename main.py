@@ -1,3 +1,5 @@
+## Merge linux and windows script togather.
+
 import os 
 import time 
 import keyboard as kb
