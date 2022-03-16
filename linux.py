@@ -37,13 +37,6 @@ kb.press("F11")
 
 if sys.platform.startswith("linux"):
     os.system('clear')
-    # linux
-elif sys.platform == "darwin":
-    os.system('clear')
-    # MAC OS X
-elif sys.platform == "win32":
-    os.system('cls')
-    # Windows (either 32-bit or 64-bit)
 
 
 print(banner)
@@ -146,13 +139,7 @@ while True:
     
     if sys.platform.startswith("linux"):
         os.system('clear')
-    # linux
-    elif sys.platform == "darwin":
-        os.system('clear')
-    # MAC OS X
-    elif sys.platform == "win32":
-        os.system('cls')
-    # Windows (either 32-bit or 64-bit)
+   
 
     print(banner)
     print("")
@@ -166,13 +153,7 @@ while True:
 
         if sys.platform.startswith("linux"):
             os.system('clear')
-    # linux
-        elif sys.platform == "darwin":
-            os.system('clear')
-    # MAC OS X
-        elif sys.platform == "win32":
-            os.system('cls')
-    # Windows (either 32-bit or 64-bit)
+  
 
         print(banner)
         cwd = os.getcwd() 
@@ -220,13 +201,7 @@ while True:
   
         if sys.platform.startswith("linux"):
             os.system('clear')
-    # linux
-        elif sys.platform == "darwin":
-            os.system('clear')
-    # MAC OS X
-        elif sys.platform == "win32":
-            os.system('cls')
-    # Windows (either 32-bit or 64-bit)
+
         print(banner)
         
         print("")
@@ -304,107 +279,77 @@ button {
 
        if sys.platform.startswith("linux"):
             os.system('clear')
-    # linux
-        elif sys.platform == "darwin":
-            os.system('clear')
-    # MAC OS X
-        elif sys.platform == "win32":
-            os.system('cls')
-    # Windows (either 32-bit or 64-bit)        print(banner)
-        print("")
-        print("#  Name              Roles")
-        print("")
-        print("1. unofficialdxnny - Owner")
-        print("2. Dx_Deathstrike - Gfx")
 
-        print("")
+            print(banner)
+            print("")
+            print("#  Name              Roles")
+            print("")
+            print("1. unofficialdxnny - Owner")
+            print("2. Dx_Deathstrike - Gfx")
+
+            print("")
 
 
-        visit = int(input("Please Type in the number of the user whom you'd like to visit : "))
+    visit = int(input("Please Type in the number of the user whom you'd like to visit : "))
 
-        if visit == 1:
+    if visit == 1:
         if sys.platform.startswith("linux"):
             os.system('clear')
-    # linux
-        elif sys.platform == "darwin":
-            os.system('clear')
-    # MAC OS X
-        elif sys.platform == "win32":
-            os.system('cls')
-    # Windows (either 32-bit or 64-bit)
-          print(banner)
-          print("")
-          print("1. Instagram")
-          print("2. Github")
-          print("3. Youtube")
-          print("4. All")
-          print("5. Back")
-          print("")
-          opt = int(input("Choose an option : "))
-          if opt == 1:
-            wb.open("https://instagram.com/unofficialdxnny")
-            input("press enter to continue...")
-          elif opt == 2:
-            wb.open("https://github.com/unofficialdxnny")
-            input("press enter to continue...")
+            print(banner)
+            print("")
+            print("1. Instagram")
+            print("2. Github")
+            print("3. Youtube")
+            print("4. All")
+            print("5. Back")
+            print("")
+            opt = int(input("Choose an option : "))
 
-          elif opt == 3:
-            wb.open("https://www.youtube.com/channel/UCCP1p4ZG5KmLnnJhIm0KEXg")
-            input("press enter to continue...")
 
-          elif opt == 4:
-            wb.open("https://instagram.com/unofficialdxnny")
-            wb.open("https://github.com/unofficialdxnny")
-            wb.open("https://www.youtube.com/channel/UCCP1p4ZG5KmLnnJhIm0KEXg")
-            wb.open("https://www.youtube.com/channel/UCCP1p4ZG5KmLnnJhIm0KEXg")
+            if opt == 1:
+                wb.open("https://instagram.com/unofficialdxnny")
+                input("press enter to continue...")
+            elif opt == 2:
+                wb.open("https://github.com/unofficialdxnny")
+                input("press enter to continue...")
+
+            elif opt == 3:
+                wb.open("https://www.youtube.com/channel/UCCP1p4ZG5KmLnnJhIm0KEXg")
+                input("press enter to continue...")
+
+            elif opt == 4:
+                wb.open("https://instagram.com/unofficialdxnny")
+                wb.open("https://github.com/unofficialdxnny")
+                wb.open("https://www.youtube.com/channel/UCCP1p4ZG5KmLnnJhIm0KEXg")
+                wb.open("https://www.youtube.com/channel/UCCP1p4ZG5KmLnnJhIm0KEXg")
 
             
           
-            input("press enter to continue...")
+                input("press enter to continue...")
 
             
         
         if visit == 2:
 
-        if sys.platform.startswith("linux"):
-            os.system('clear')
-    # linux
-        elif sys.platform == "darwin":
-            os.system('clear')
-    # MAC OS X
-        elif sys.platform == "win32":
-            os.system('cls')
-    # Windows (either 32-bit or 64-bit)
-          print(banner)
-          print("")
-          print("1. Instagram")
-          print("2. Back")
-          print("")
-          opt = int(input("Select an options : "))
-          if opt == 1:
-
-            wb.open("https://instagram.com/Dx_Deathstrike")
-            input("press enter to continue...")
+            if sys.platform.startswith("linux"):
+                os.system('clear')
+                print(banner)
+                print("")
+                print("1. Instagram")
+                print("2. Back")
+                print("")
+                opt = int(input("Select an options : "))
+                if opt == 1:
+                    wb.open("https://instagram.com/Dx_Deathstrike")
+                
+                    input("press enter to continue...")
 
 
 
 
         time.sleep(5)
 
-    elif opt != [1, 2, 3, 4]:
-        import getpass
-        import time
+                
 
-        name = getpass.getuser()
-        print("Pick a number between 1 and 4 " +  name )
-
-        print("")
-
-        print(eyes)
-        
-        time.sleep(3)
-        
-	
- 
     
     
