@@ -36,6 +36,8 @@ if are confused than message me on discord `unofficialdxnny#8301`
 - Creates a rpc for discord
 
 
+## Note
+- If you are on windows than `linux.py` wont work for you and if your are on Linux than `main.py` wont work for you (obvious reasons)
 
 ## Contributers:
 
