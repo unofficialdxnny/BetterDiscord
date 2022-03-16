@@ -26,7 +26,7 @@ from win10toast import ToastNotifier
 n = ToastNotifier()
   
 n.show_toast("BetterDiscord - unofficialdxnny", 
-"About BetterDiscord is a terminal interface where you can make Discord themes quickly with no prior CSS knowledge", duration = 3 )
+"BetterDiscord is a terminal interface where you can make Discord themes quickly with no prior CSS knowledge", duration = 3 )
 
 class bcolors:
     HEADER = '\033[32m'
