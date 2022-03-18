@@ -72,20 +72,29 @@ TF = """
 """
 
 socials = """
+
 1. Instagram
+
 2. Github
+
 3. Discord
+
+
 """
 
 MM = """
-1. Custom CSS Theme
-2. Install BetterDiscord
-3. Tutorial
-4. Contributers
-"""
-eyes = """"""
 
-       					.,,cccd$$$$$$$$$$$ccc,
+1. Custom CSS Theme
+
+2. Install BetterDiscord
+
+3. Tutorial
+
+4. Contributers
+
+"""
+eyes = """
+                                      .,,cccd$$$$$$$$$$$ccc,
                                     ,cc$$$$$$$$$$$$$$$$$$$$$$$$$cc,
                                   ,d$$$$$$$$$$$$$$$$"J$$$$$$$$$$$$$$c,
                                 d$$$$$$$$$$$$$$$$$$,$" ,,`?$$$$$$$$$$$$L
@@ -120,8 +129,7 @@ $$$$F ?$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$P",z'                3$$h   ?$F
                         :$$$$$c?$$$$PF'
                         `$$$$$$$P
                          `?$$$$F
-
-"""""
+"""
 
 
 
@@ -239,11 +247,16 @@ while True:
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap');
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/BlurpleRecolor/BlurpleRecolor.css');
 @import url('https://discord-custom-covers.github.io/usrbg/dist/usrbg.css');
+
 button {
 	--accentcolor: var(--accent-alt);
 }
+
+
 /* Root Variables */
+
  :root {
+
             """)
         
 
@@ -358,18 +371,22 @@ button {
         time.sleep(5)
 
     elif opt != [1, 2, 3, 4]:
+        RPC.update(state="He cant read", details="By unofficialdxnny", large_image="https://imgur.com/FtuQIfw.jpg", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
+
         import getpass
         import time
-
+        os.system("cls")
+        
         name = getpass.getuser()
         print("Pick a number between 1 and 4 " +  name )
 
         print("")
 
+      
         print(eyes)
         
-        time.sleep(3)
-        
+        input("Press enter to continue...")        
 	
  
+    
     

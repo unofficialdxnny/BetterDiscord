@@ -1,1 +1,1 @@
-## this will be one big file containing bot h of the scripts (" in one)
+## this will be one big file containing both of the scripts (" in one)
