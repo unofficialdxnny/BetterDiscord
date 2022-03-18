@@ -233,40 +233,47 @@ while True:
         print("")
         print("Importing Necaserry Libraries... ")
 
+        time.sleep(3)
+
         os.system("cls")
         print(banner)
 
 
         print("")
+
+        author = input('What would you like to be called as the author of this Theme : ')  
+
+        version = input('What is this themes version : ')
+
+        description = input('Give your theme a nice description : ')
+
+        source = input('Paste the source code link here (leave empty if none) : ')
+
+        website = input('Link your website here (leave empty if none) : ')
+
+        invite = input('Add your discord server invite code here (leave empty if none) : ')
+
+
         with open(name + '.css', 'a') as f:
-            f.write("""
+            f.write(f"""
             
-            
-            
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap');
-@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/BlurpleRecolor/BlurpleRecolor.css');
-@import url('https://discord-custom-covers.github.io/usrbg/dist/usrbg.css');
+/**
+ * @name {author}
+ * @version {version}
+ * @description {description}
+ * @source {source}
+ * @website {website}
+ * @invite {invite}
+ */
 
-button {
-	--accentcolor: var(--accent-alt);
-}
 
 
-/* Root Variables */
 
- :root {
 
             """)
         
 
 
-         
-        background = input("Enter your background image link with ('') at the start and the end (can be gif) : ")
-
-        with open( name + ".css","a") as file:
-            file.write(f"--background-image: url({background});"),
-
-            print("")
 
 
       
@@ -303,6 +310,7 @@ button {
         print("")
         print("1. unofficialdxnny - Owner")
         print("2. Dx_Deathstrike - Gfx")
+        print("3. pain hours - Music")
 
         print("")
 
@@ -363,6 +371,13 @@ button {
 
             wb.open("https://instagram.com/Dx_Deathstrike")
             input("press enter to continue...")
+
+        if visit == 3:
+          RPC.update(state="Listening to pain hours", details="By unofficialdxnny", large_image="https://imgur.com/FtuQIfw.jpg", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
+
+          wb.open("https://www.youtube.com/watch?v=YIkuLXr-UTY&ab_channel=painhours")
+
+          input("Press enter to continue...")
 
 
 
