@@ -167,8 +167,11 @@ while True:
     print("\033[93m")
     print(MM)
     
-    
-    opt = input("Select an option : ")
+    try:
+      opt = int(input("Select an option : "))
+      break
+    except ValueError:
+      print(eyes)
     
     if opt == 1:
         RPC.update(state="Creating Theme", details="By unofficialdxnny", large_image="https://imgur.com/FtuQIfw.jpg", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
@@ -500,6 +503,4 @@ while True:
         input("Press enter to continue...")        
 	
  
-
-	
-    
+   
