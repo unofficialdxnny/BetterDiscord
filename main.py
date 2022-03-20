@@ -5,7 +5,7 @@ import time
 import keyboard as kb
 import webbrowser as wb
 import sys
-
+import pyautogui as pag
 
 
 
@@ -189,7 +189,39 @@ while True:
 
           "   When the program is finished you will have a .css file with your discord theme in " + cwd)
 
-       
+        print(':: Press enter when your mouse is over the discord icon on your taskbar ::')
+
+
+        kb.read_key('enter')
+        discord = pag.position()
+        time.sleep(2)
+        print(discord)
+
+
+
+        print(':: Press enter when your mouse is over the discord settings icon ::')
+
+        kb.read_key('enter')
+        settings = pag.position()
+        time.sleep(2)
+        print(settings)
+
+
+
+        print(':: Without scrolling down press enter when your mouse is over the Custom CSS tab ::')
+
+        kb.read_key('enter')
+        customcss = pag.position()
+        time.sleep(2)
+        print(customcss)
+
+        print(':: Press enter when your mouse is on the first line of the editor ::')
+
+        kb.read_key('enter')
+        line1 = pag.position()
+        time.sleep(2)
+        print(line1)
+
 
         print("")
 
@@ -213,6 +245,8 @@ while True:
 
 
         print("")
+
+
 
         name = input("Name your theme : ")
         
@@ -372,8 +406,10 @@ while True:
         mutedcolor = input('Please type in the hex colour for mutedchannel without the # : ')
         print("")
 
+        
+        
 
-
+        
 
         with open(name + '.css', 'a') as f:
             f.write(f"""
@@ -387,66 +423,100 @@ while True:
  * @invite {invite}
  */
 
-@import url(https://clearvision.gitlab.io/v6/main.css);
 
 
 	/* ACCENT COLORS */
-	--main-color: #{maincolour}; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
-	--hover-color: #{hovercolour}; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
-	--success-color: #{successcolour}; /* success accent color (hex, rgb or hsl) [default: #43b581] */
-	--danger-color: #{dangercolour}; /* danger accent color (hex, rgb or hsl) [default: #982929] */	
-	--url-color: #({urlcolour}); /*The color of url links [default: var(--main-color)]*/
+	--main-color: #{maincolour}; 
+	--hover-color: #{hovercolour};
+	--success-color: #{successcolour}; 
+	--danger-color: #{dangercolour};
+	--url-color: #({urlcolour}); 
 
 	/* STATUS COLORS */
-	--online-color: #{onlinecolour}; /* online status color (hex, rgb or hsl) [default: #43b581] */
-	--idle-color: #{idlecolour}; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
-	--dnd-color: #{dndcolour}; /* dnd status color (hex, rgb or hsl) [default: #982929] */
-	--streaming-color: #{streamingcolour}; /* streaming status color (hex, rgb or hsl) [default: #593695] */
-	--offline-color: #{offlinecolour}; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
+	--online-color: #{onlinecolour}; 
+	--idle-color: #{idlecolour}; 
+	--dnd-color: #{dndcolour}; 
+	--streaming-color: #{streamingcolour}; 
+	--offline-color: #{offlinecolour}; 
 
 	/* GENERAL */
-	--main-font: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
-	--code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
-	--text-normal: #{normaltext}; /* color of default discord text */
-	--text-muted:  #{textmuted}; /* color of default discord muted text (e.g.text found in input fields before typing).*/
-	--channels-width: {channelwidth}px; /* channel list width (240px for Discord default) [default: 220px] */
-	--members-width: {memberswidth}px; /* member list width [default: 240px] */
+	--main-font: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif; 
+	--code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; 
+	--text-normal: #{normaltext}; 
+	--text-muted:  #{textmuted}; 
+	--channels-width: {channelwidth}px; 
+	--members-width: {memberswidth}px; 
 
 	/* APP BACKGROUND */
-	--background-shading: {bgshading}%; /* app background shading (0 for complete smoothness) [default: 100%] */
-	--background-overlay: #{bgoverlay}; /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
-	--background-image: url({bgimage}); /* app background image (link must be HTTPS) [default: url(https://clearvision.gitlab.io/images/sapphire.jpg)]*/
-	--background-position: {bgposition}; /* app background position [default: center] */
-	--background-size: {bgsize}; /* app background size [default: cover] */
-	--background-repeat: {bgrepeat}; /* app background repeat [default: no-repeat] */
-	--background-attachment: fixed; /* app background attachment [default: fixed] */
-	--background-brightness: 100%; /* app background brightness (< 100% for darken, > 100% for lighten) [default: 100%] */
-	--background-contrast: {bgcontrast}%; /* app background contrast [default: 100%] */
-	--background-saturation: {bgsaturation}%; /* app background saturation [default: 100%] */
-	--background-invert: {bginvert}%; /* app background invert (0 - 100%)  [default: 0%] */
-	--background-grayscale: {bggrayscale}%; /* app background grayscale ( 0 - 100%) [default: 0%] */
-	--background-sepia: {bgsepia}%; /* app background sepia (0 - 100%) [default: 0%] */
-	--background-blur: {bgblur}px; /* app background blur [default: 0px] */
+	--background-shading: {bgshading}%; 
+	--background-overlay: #{bgoverlay}; 
+	--background-image: url({bgimage}); 
+	--background-position: {bgposition}; 
+	--background-size: {bgsize}; 
+	--background-repeat: {bgrepeat}; 
+	--background-attachment: fixed; 
+	--background-brightness: 100%;
+	--background-contrast: {bgcontrast}%;
+	--background-saturation: {bgsaturation}%;
+	--background-invert: {bginvert}%; 
+	--background-grayscale: {bggrayscale}%;
+	--background-sepia: {bgsepia}%;
+	--background-blur: {bgblur}px;
 	
 	/* HOME BUTTON ICON */
-	--home-icon: url({homeicon}); /* home button icon (link must be HTTPS) [default: url(https://clearvision.gitlab.io/icons/discord.svg)]*/
-	--home-position: {homeposition}; /* home button icon position [default: center] */
-	--home-size: {homesize}px; /* home button icon size [default: 40px] */
+	--home-icon: url({homeicon}); 
+	--home-position: {homeposition};
+	--home-size: {homesize}px;
 		
 	/* CHANNEL COLORS */
-	--channel-unread: #{channelunread}; /* Unread Server channel color. [default:  var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/
-	--channel-color:  #{channelcolor}; /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
-	--channel-text-selected: #{channeltextselected}; /* Selected channel text color, CV default is #fff */
-	--muted-color: #{mutedcolor}; /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
+	--channel-unread: #{channelunread}; 
+	--channel-color:  #{channelcolor}; 
+	--channel-text-selected: #{channeltextselected}; 
+	--muted-color: #{mutedcolor}; 
 
 
 
             """)
+
+        time.sleep(5)
+
+
+        
+        pag.moveTo(discord[0], discord[1], 0.5)
+        pag.click()
+        time.sleep(2)
+
+        
+        pag.moveTo(settings[0], settings[1], 0.5)
+        pag.click()
+        time.sleep(2)
+
+        
+        pag.moveTo(customcss[0], customcss[1], 0.5)
+        pag.click()
+        time.sleep(2)
+
+        
+        pag.moveTo(line1[0], line1[1], 0.5)
+        pag.click()
+        time.sleep(5)
         
 
 
+        
+        with open(name + '.css') as f:
+          lines = f.read()
 
 
+        pag.typewrite(lines)
+
+        
+
+
+            
+        
+
+  
       
 
 
