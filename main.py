@@ -533,7 +533,7 @@ while True:
         
     elif opt == 3:
         RPC.update(state="Watching Tutorial", details="By unofficialdxnny", large_image="https://imgur.com/EHlrEAr.png", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
-        tutorial = "https://github.com"
+        tutorial = "https://github.com/unofficialdxnny/BetterDiscord"
         wb.open(tutorial)
         input("press enter to continue...")
 
