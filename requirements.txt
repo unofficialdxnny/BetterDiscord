@@ -1,0 +1,10 @@
+os
+time
+keyboard
+webbrowser
+sys
+pyautogui
+pypresence
+playsound
+itertools
+threading
