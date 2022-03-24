@@ -343,13 +343,13 @@ while True:
         textmuted = input('Please type in the colour for muted text in hex without the # : ')
         print("")
 
-        channelwidth = input('Please type in the size number for channel width without the px : ')
+        channelwidth = input('Please type in the size number for channel width without the px [default: 220px] : ')
         print("")
 
-        memberswidth = input('Please type in the size number for members width without the px : ')
+        memberswidth = input('Please type in the size number for members width without the px [default: 240px] : ')
         print("")
 
-        bgshading = input('Please type in the number for background shading without the % : ')
+        bgshading = input('Please type in the number for background shading without the % [default: 100%] : ')
         print("")
 
         bgoverlay = input('Please type in the hex colour for background gradient without the # : ')
@@ -358,31 +358,31 @@ while True:
         bgimage = input('Please paste the link to your desired image for the background : ')
         print("")
 
-        bgposition = input('Please type in the bg position : ')
+        bgposition = input('Please type in the bg position [default: center] : ')
         print("")
 
-        bgsize = input('Please type in the background size : ')
+        bgsize = input('Please type in the background size [default: cover] : ')
         print("")
 
-        bgrepeat = input('Type repeat or no-repeat here for a bgrepeat or not : ')
+        bgrepeat = input('Type repeat or no-repeat here for a bgrepeat or not [default: no-repeat] : ')
         print("")
 
-        bgcontrast = input('Type in a number between 0 - 100 for bg contrast without the % : ')
+        bgcontrast = input('Type in a number between 0 - 100 for bg contrast without the % [default: 100%] : ')
         print("")
 
-        bgsaturation = input('Type in a number between 0 - 100 for bg saturation without the % : ')
+        bgsaturation = input('Type in a number between 0 - 100 for bg saturation without the % [default: 100%] : ')
         print("")
 
-        bginvert = input('Type in a number between 0 - 100 according to how much you want to invert your background without % : ')
+        bginvert = input('Type in a number between 0 - 100 according to how much you want to invert your background without % [default: 0%] : ')
         print("")
 
-        bggrayscale = input('Type in a number between 0 - 100 according to how much grayscale you want your background to have without % : ')
+        bggrayscale = input('Type in a number between 0 - 100 according to how much grayscale you want your background to have without % [default: 0%] : ')
         print("")
 
-        bgsepia = input('Type in a number between 0 - 100 according to how much sepia you want without % : ')
+        bgsepia = input('Type in a number between 0 - 100 according to how much sepia you want without % [default: 0%] : ')
         print("")
 
-        bgblur = input('Type in a number between 0 - 100 according to how much blur you want your background to have without % : ')
+        bgblur = input('Type in a number between 0 - 100 according to how much blur you want your background to have without % [default: 0px] : ')
         print("")
 
         homeicon = input('Include a https link for your image you would like to use for the home button : ')
@@ -391,7 +391,7 @@ while True:
         homeposition = input('home button icon position [default: center] : ')
         print("")
 
-        homesize = input('Type in the number for home size without px : ')
+        homesize = input('Type in the number for home size without px [default: 40px] : ')
         print("")
 
         channelunread = input('Please type in the hex colour for unread channel without the # : ')
