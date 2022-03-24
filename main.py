@@ -6,6 +6,7 @@ import keyboard as kb
 import webbrowser as wb
 import sys
 import pyautogui as pag
+import win32gui, win32con
 
 
 
@@ -17,7 +18,7 @@ RPC = Presence(client_id)  # Initialize the client class
 RPC.connect() # Start the handshake loop
 
 start_time=time.time() 
-RPC.update(state="Beta", details="By unofficialdxnny", large_image="https://imgur.com/EHlrEAr.png", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
+RPC.update(state="Loading", details="By unofficialdxnny", large_image="https://imgur.com/EHlrEAr.png", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
 
     
 from win10toast import ToastNotifier
@@ -51,14 +52,20 @@ banner = """
                                                                   
 """
 
-kb.press("F11")
+
+hwnd = win32gui.GetForegroundWindow()
+win32gui.ShowWindow(hwnd, win32con.SW_MAXIMIZE)
+
 os.system("cls")
 print(banner)
 
 import playsound
 playsound.playsound('moosiq.mp3', False)
 
-#i mport winsound
+os.system("cls")
+print(banner)
+
+#import winsound
 # winsound.PlaySound("moosiq.wav", winsound.SND_ASYNC | winsound.SND_ALIAS | winsound.SND_LOOP + winsound.SND_ASYNC)
 
  
@@ -172,7 +179,7 @@ while True:
     opt = int(input("Select an option : "))
     
     if opt == 1:
-        RPC.update(state="Creating Theme", details="By unofficialdxnny", large_image="https://imgur.com/EHlrEAr.png", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
+        RPC.update(state="Creating Theme", details="By unofficialdxnny", large_image="https://imgur.com/OGL0Ff2.png", large_text="Editing a CSS3 file", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
         os.system("cls")
         print(banner)
         cwd = os.getcwd() 
@@ -334,7 +341,7 @@ while True:
         streamingcolour = input('Please type in the colour for streaming user in hex without the # : ')
         print("")
 
-        offlinecolour = input('Please type in the colour for online user in hex without the # : ')
+        offlinecolour = input('Please type in the colour for offline user in hex without the # : ')
         print("")
 
         normaltext = input('Please type in the colour for normal text in hex without the # : ')
@@ -423,8 +430,9 @@ while True:
  * @invite {invite}
  */
 
+  @import url('https://unofficialdxnny.github.io/main.css')
 
-
+  :root{
 	/* ACCENT COLORS */
 	--main-color: #{maincolour}; 
 	--hover-color: #{hovercolour};
@@ -472,7 +480,7 @@ while True:
 	--channel-unread: #{channelunread}; 
 	--channel-color:  #{channelcolor}; 
 	--channel-text-selected: #{channeltextselected}; 
-	--muted-color: #{mutedcolor}; 
+	--muted-color: #{mutedcolor};}
 
 
 
@@ -552,7 +560,6 @@ while True:
         print("1. unofficialdxnny - Owner")
         print("2. Dx_Deathstrike - Gfx")
         print("3. pain hours - Music")
-        print("4. ClearVision - CSS Template")
 
         print("")
 
@@ -622,13 +629,7 @@ while True:
           input("Press enter to continue...")
 
         
-        if visit == 4:
-          RPC.update(state="Viewing ClearVision", details="By unofficialdxnny", large_image="https://imgur.com/EHlrEAr.png", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
-
-          wb.open('https://clearvision.gitlab.io')
-
-          input('Press enter to continue')
-
+       
 
 
 
