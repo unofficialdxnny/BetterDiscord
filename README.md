@@ -1,6 +1,10 @@
 # BetterDiscord
 BetterDiscord is a terminal interface where you can make Discord themes quickly with no prior CSS knowledge
 
+
+
+#### Fixing a small problem (its not working currently)
+
 For a little over a month I've been making a `Python` tool called <a href="https://github.com/unofficialdxnny/BetterDiscord" target="blank">BetterDiscord</a> Which is a terminal interface allowing you to create Discord Themes in `CSS` with ease.
 
 
