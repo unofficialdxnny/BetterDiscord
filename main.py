@@ -560,6 +560,7 @@ while True:
         print("1. unofficialdxnny - Owner")
         print("2. Dx_Deathstrike - Gfx")
         print("3. pain hours - Music")
+        print("4. patorjk - Asscii Art")
 
         print("")
 
@@ -628,7 +629,13 @@ while True:
 
           input("Press enter to continue...")
 
-        
+        if visit == 4:
+          RPC.update(state="Viewing Asscii Art", details="By unofficialdxnny", large_image="https://imgur.com/EHlrEAr.png", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
+
+          wb.open("https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20")
+
+          input("Press enter to continue...")
+          
        
 
 
