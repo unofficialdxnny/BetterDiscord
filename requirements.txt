@@ -1,7 +1,5 @@
-time
 keyboard
 pyautogui
 pypresence
 playsound
-itertools
-threading
+
