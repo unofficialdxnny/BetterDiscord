@@ -195,7 +195,11 @@ while True:
         print_slow('\033[91m Welcome To Designer! \n \n'
 
           "   When the program is finished you will have a .css file with your discord theme in " + cwd)
+          
 
+        print('')
+        
+          
         print(':: Press enter when your mouse is over the discord icon on your taskbar ::')
 
 
@@ -430,11 +434,20 @@ while True:
  * @invite {invite}
  */
 
-  @import url('https://unofficialdxnny.github.io/main.css')
+  @import url('https://unofficialdxnny.github.io/main.css');
 
-  :root{
+
+
+  
+  """ 
+  
+  
+  """
+
 	/* ACCENT COLORS */
-	--main-color: #{maincolour}; 
+
+:root{
+  --main-color: #{maincolour}; 
 	--hover-color: #{hovercolour};
 	--success-color: #{successcolour}; 
 	--danger-color: #{dangercolour};
