@@ -471,29 +471,29 @@ while True:
 	/* APP BACKGROUND */
 	--background-shading: """ + bgshading +"""%; 
 	--background-overlay: #""" + bgoverlay +"""; 
-	--background-image: url({bgimage}); 
-	--background-position: {bgposition}; 
-	--background-size: {bgsize}; 
-	--background-repeat: {bgrepeat}; 
+	--background-image: url(""" + bgimage +"""); 
+	--background-position: """ + bgposition +"""; 
+	--background-size: """ + bgsize +"""; 
+	--background-repeat: """ + bgrepeat +"""; 
 	--background-attachment: fixed; 
 	--background-brightness: 100%;
-	--background-contrast: {bgcontrast}%;
-	--background-saturation: {bgsaturation}%;
-	--background-invert: {bginvert}%; 
-	--background-grayscale: {bggrayscale}%;
-	--background-sepia: {bgsepia}%;
-	--background-blur: {bgblur}px;
+	--background-contrast: """ + bgcontrast +"""%;
+	--background-saturation: """ + bgsaturation +"""%;
+	--background-invert: """ + bginvert +"""%; 
+	--background-grayscale: """ + bggrayscale +"""%;
+	--background-sepia: """ + bgsepia +"""%;
+	--background-blur: """ + bgblur +"""px;
 	
 	/* HOME BUTTON ICON */
-	--home-icon: url({homeicon}); 
-	--home-position: {homeposition};
-	--home-size: {homesize}px;
+	--home-icon: url(""" + homeicon +"""); 
+	--home-position: """ + homeposition +""";
+	--home-size: """ + homesize +"""px;
 		
 	/* CHANNEL COLORS */
-	--channel-unread: #{channelunread}; 
-	--channel-color:  #{channelcolor}; 
-	--channel-text-selected: #{channeltextselected}; 
-	--muted-color: #{mutedcolor};}
+	--channel-unread: #""" + channelunread +"""; 
+	--channel-color:  #""" + channelcolor +"""; 
+	--channel-text-selected: #""" + channeltextselected +"""; 
+	--muted-color: #""" + mutedcolor +""";}
 
 
 
