@@ -447,30 +447,30 @@ while True:
 	/* ACCENT COLORS */
 
 :root{
-  --main-color: #{maincolour}; 
-	--hover-color: #{hovercolour};
-	--success-color: #{successcolour}; 
-	--danger-color: #{dangercolour};
-	--url-color: #({urlcolour}); 
+  --main-color: #""" + maincolour +"""; 
+	--hover-color: #""" + hovercolour +""";
+	--success-color: #""" + successcolour +"""; 
+	--danger-color: #""" + dangercolour +""";
+	--url-color: #(""" + urlcolour + """); 
 
 	/* STATUS COLORS */
-	--online-color: #{onlinecolour}; 
-	--idle-color: #{idlecolour}; 
-	--dnd-color: #{dndcolour}; 
-	--streaming-color: #{streamingcolour}; 
-	--offline-color: #{offlinecolour}; 
+	--online-color: #""" + onlinecolour +"""; 
+	--idle-color: #""" + idlecolour +"""; 
+	--dnd-color: #""" + dndcolour + """; 
+	--streaming-color: #""" + streamingcolour + """; 
+	--offline-color: #""" + offlinecolour + """; 
 
 	/* GENERAL */
 	--main-font: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif; 
 	--code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; 
-	--text-normal: #{normaltext}; 
-	--text-muted:  #{textmuted}; 
-	--channels-width: {channelwidth}px; 
-	--members-width: {memberswidth}px; 
+	--text-normal: #""" + normaltext + """; 
+	--text-muted:  #""" + textmuted + """; 
+	--channels-width: """ + channelwidth + """px; 
+	--members-width: """ + memberswidth +"""px; 
 
 	/* APP BACKGROUND */
-	--background-shading: {bgshading}%; 
-	--background-overlay: #{bgoverlay}; 
+	--background-shading: """ + bgshading +"""%; 
+	--background-overlay: #""" + bgoverlay +"""; 
 	--background-image: url({bgimage}); 
 	--background-position: {bgposition}; 
 	--background-size: {bgsize}; 
