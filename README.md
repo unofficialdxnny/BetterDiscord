@@ -31,7 +31,12 @@ You are greeted with a small menu
  Option 4 Shows credits to our contributors
 
  
-## Author Data
+## UPCOMING
 
-![lol](https://user-images.githubusercontent.com/82535503/159143809-be889d13-34ef-4a75-a683-bf448e4b9d8f.png)
+so soon i will add :
+
+save file directly to the themes directory
+
+preloaded themes
+
 
