@@ -39,4 +39,6 @@ save file directly to the themes directory
 
 preloaded themes
 
+adding a long script for all os
+
 
