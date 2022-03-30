@@ -18,7 +18,7 @@ RPC = Presence(client_id)  # Initialize the client class
 RPC.connect() # Start the handshake loop
 
 start_time=time.time() 
-RPC.update(state="Loading", details="By unofficialdxnny", large_image="https://imgur.com/EHlrEAr.png", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
+RPC.update(state="Loading", details="By unofficialdxnny", large_image="https://preview.redd.it/jv3uniz52vo51.gif?format=png8&s=9a4b9d2674e3ef51640097e11dcb59e979427a46", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
 
     
 from win10toast import ToastNotifier
@@ -165,7 +165,7 @@ done = True
 
 
 while True:
-    RPC.update(state="Main Menu", details="By unofficialdxnny", large_image="https://imgur.com/EHlrEAr.png", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
+    RPC.update(state="Main Menu", details="By unofficialdxnny", large_image="https://preview.redd.it/jv3uniz52vo51.gif?format=png8&s=9a4b9d2674e3ef51640097e11dcb59e979427a46", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
 
 
     
@@ -179,10 +179,10 @@ while True:
     opt = int(input("Select an option : "))
     
     if opt == 1:
-        RPC.update(state="Creating Theme", details="By unofficialdxnny", large_image="https://imgur.com/OGL0Ff2.png", large_text="Editing a CSS3 file", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
+        RPC.update(state="Creating Theme", details="By unofficialdxnny", large_image="https://preview.redd.it/jv3uniz52vo51.gif?format=png8&s=9a4b9d2674e3ef51640097e11dcb59e979427a46", large_text="Editing a CSS3 file", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
         os.system("cls")
         print(banner)
-        cwd = input('Paste the themes directory path for BetterDiscord here')
+        cwd = os.getcwd()
         import sys
         import time
 
@@ -194,11 +194,12 @@ while True:
         print("")
         print_slow('\033[91m Welcome To Designer! \n \n'
 
-          "   When the program is finished you will have a .css file with your discord theme in " + cwd)
+          "   When the program is finished you will have a .theme.css file with your discord theme in " + cwd)
           
 
         print('')
-
+        
+       
 
         print("")
 
@@ -228,7 +229,7 @@ while True:
         name = input("Name your theme : ")
         
 
-        RPC.update(state="Just created " + name + ".css", details="By unofficialdxnny", large_image="https://www.w3.org/html/logo/img/class-header-css3.jpg", small_image="https://imgur.com/EHlrEAr.png", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
+        RPC.update(state="Just created " + name + ".theme.theme.css", details="By unofficialdxnny", large_image="https://www.w3.org/html/logo/img/class-header-css3.jpg", small_image="https://preview.redd.it/jv3uniz52vo51.gif?format=png8&s=9a4b9d2674e3ef51640097e11dcb59e979427a46", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
 
     
         import sys
@@ -246,12 +247,12 @@ while True:
         print(banner)
         
         print("")
-        RPC.update(state="Workspace: " + name + ".css", details="By unofficialdxnny", large_image="https://www.w3.org/html/logo/img/class-header-css3.jpg", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
+        RPC.update(state="Workspace: " + name + ".theme.css", details="By unofficialdxnny", large_image="https://www.w3.org/html/logo/img/class-header-css3.jpg", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
 
         print("")
         print("")
         
-        print("\033[93m" + name + "themes.css File has been created  ")
+        print("\033[93m" + name + ".theme.css File has been created  ")
 
         time.sleep(3)
 
@@ -388,10 +389,8 @@ while True:
 
         
 
-        with open(name + 'theme.css', 'a') as f:
-            f.write(f"""
-            
-/**
+        with open(name + '.theme.css', 'a') as f:
+            f.write(f"""/**
  * @name {author}
  * @version {version}
  * @description {description}
@@ -465,52 +464,10 @@ while True:
 
             """)
 
-        time.sleep(5)
-
-
         
-        pag.moveTo(discord[0], discord[1], 0.5)
-        pag.click()
-        time.sleep(2)
-
-        
-        pag.moveTo(settings[0], settings[1], 0.5)
-        pag.click()
-        time.sleep(2)
-
-        
-        pag.moveTo(customcss[0], customcss[1], 0.5)
-        pag.click()
-        time.sleep(2)
-
-        
-        pag.moveTo(line1[0], line1[1], 0.5)
-        pag.click()
-        time.sleep(5)
-        
-
-
-        
-        with open(name + '.css') as f:
-          lines = f.read()
-
-
-        pag.typewrite(lines)
-
-        
-
-
-            
-        
-
-  
-      
-
-
-        time.sleep(5)
         
     elif opt == 2:
-        RPC.update(state="Setting Up", details="By unofficialdxnny", large_image="https://imgur.com/EHlrEAr.png", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
+        RPC.update(state="Setting Up", details="By unofficialdxnny", large_image="https://preview.redd.it/jv3uniz52vo51.gif?format=png8&s=9a4b9d2674e3ef51640097e11dcb59e979427a46", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
         wb.open("https://betterdiscord.app")
 
         
@@ -519,8 +476,8 @@ while True:
    
         
     elif opt == 3:
-        RPC.update(state="Watching Tutorial", details="By unofficialdxnny", large_image="https://imgur.com/EHlrEAr.png", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
-        tutorial = "https://github.com/unofficialdxnny/BetterDiscord"
+        RPC.update(state="Watching Tutorial", details="By unofficialdxnny", large_image="https://preview.redd.it/jv3uniz52vo51.gif?format=png8&s=9a4b9d2674e3ef51640097e11dcb59e979427a46", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
+        tutorial = "https://www.instagram.com/p/CbvCryajTSQ/"
         wb.open(tutorial)
         input("press enter to continue...")
 
@@ -529,7 +486,7 @@ while True:
     
         
     elif opt == 4:
-        RPC.update(state="Contributers", details="By unofficialdxnny", large_image="https://imgur.com/EHlrEAr.png", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
+        RPC.update(state="Contributers", details="By unofficialdxnny", large_image="https://preview.redd.it/jv3uniz52vo51.gif?format=png8&s=9a4b9d2674e3ef51640097e11dcb59e979427a46", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
 
         os.system("cls")
         print(banner)
@@ -547,7 +504,7 @@ while True:
         visit = int(input("Please Type in the number of the user whom you'd like to visit : "))
 
         if visit == 1:
-          RPC.update(state="Visiting unofficialdxnny", details="By unofficialdxnny", large_image="https://imgur.com/EHlrEAr.png", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
+          RPC.update(state="Visiting unofficialdxnny", details="By unofficialdxnny", large_image="https://preview.redd.it/jv3uniz52vo51.gif?format=png8&s=9a4b9d2674e3ef51640097e11dcb59e979427a46", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
           os.system("cls")
           print(banner)
           print("")
@@ -559,21 +516,21 @@ while True:
           print("")
           opt = int(input("Choose an option : "))
           if opt == 1:
-            RPC.update(state="Visiting unofficialdxnny", details="By unofficialdxnny", large_image="https://imgur.com/EHlrEAr.png", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
+            RPC.update(state="Visiting unofficialdxnny", details="By unofficialdxnny", large_image="https://preview.redd.it/jv3uniz52vo51.gif?format=png8&s=9a4b9d2674e3ef51640097e11dcb59e979427a46", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
             wb.open("https://instagram.com/unofficialdxnny")
             input("press enter to continue...")
           elif opt == 2:
-            RPC.update(state="Visiting unofficialdxnny", details="By unofficialdxnny", large_image="https://imgur.com/EHlrEAr.png", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
+            RPC.update(state="Visiting unofficialdxnny", details="By unofficialdxnny", large_image="https://preview.redd.it/jv3uniz52vo51.gif?format=png8&s=9a4b9d2674e3ef51640097e11dcb59e979427a46", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
             wb.open("https://github.com/unofficialdxnny")
             input("press enter to continue...")
 
           elif opt == 3:
-            RPC.update(state="Visiting unofficialdxnny", details="By unofficialdxnny", large_image="https://imgur.com/EHlrEAr.png", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
+            RPC.update(state="Visiting unofficialdxnny", details="By unofficialdxnny", large_image="https://preview.redd.it/jv3uniz52vo51.gif?format=png8&s=9a4b9d2674e3ef51640097e11dcb59e979427a46", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
             wb.open("https://www.youtube.com/channel/UCCP1p4ZG5KmLnnJhIm0KEXg")
             input("press enter to continue...")
 
           elif opt == 4:
-            RPC.update(state="Visiting unofficialdxnny", details="By unofficialdxnny", large_image="https://imgur.com/EHlrEAr.png", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
+            RPC.update(state="Visiting unofficialdxnny", details="By unofficialdxnny", large_image="https://preview.redd.it/jv3uniz52vo51.gif?format=png8&s=9a4b9d2674e3ef51640097e11dcb59e979427a46", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
             wb.open("https://instagram.com/unofficialdxnny")
             wb.open("https://github.com/unofficialdxnny")
             wb.open("https://www.youtube.com/channel/UCCP1p4ZG5KmLnnJhIm0KEXg")
@@ -586,7 +543,7 @@ while True:
             
         
         if visit == 2:
-          RPC.update(state="Visiting Dx_Deathstrike", details="By unofficialdxnny", large_image="https://imgur.com/EHlrEAr.png", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
+          RPC.update(state="Visiting Dx_Deathstrike", details="By unofficialdxnny", large_image="https://preview.redd.it/jv3uniz52vo51.gif?format=png8&s=9a4b9d2674e3ef51640097e11dcb59e979427a46", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
 
           os.system("cls")
           print(banner)
@@ -596,20 +553,20 @@ while True:
           print("")
           opt = int(input("Select an options : "))
           if opt == 1:
-            RPC.update(state="Visiting Dx_Deathstrike", details="By unofficialdxnny", large_image="https://imgur.com/EHlrEAr.png", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
+            RPC.update(state="Visiting Dx_Deathstrike", details="By unofficialdxnny", large_image="https://preview.redd.it/jv3uniz52vo51.gif?format=png8&s=9a4b9d2674e3ef51640097e11dcb59e979427a46", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
 
             wb.open("https://instagram.com/Dx_Deathstrike")
             input("press enter to continue...")
 
         if visit == 3:
-          RPC.update(state="Listening to pain hours", details="By unofficialdxnny", large_image="https://imgur.com/EHlrEAr.png", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
+          RPC.update(state="Listening to pain hours", details="By unofficialdxnny", large_image="https://preview.redd.it/jv3uniz52vo51.gif?format=png8&s=9a4b9d2674e3ef51640097e11dcb59e979427a46", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
 
           wb.open("https://www.youtube.com/watch?v=YIkuLXr-UTY&ab_channel=painhours")
 
           input("Press enter to continue...")
 
         if visit == 4:
-          RPC.update(state="Viewing Asscii Art", details="By unofficialdxnny", large_image="https://imgur.com/EHlrEAr.png", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
+          RPC.update(state="Viewing Asscii Art", details="By unofficialdxnny", large_image="https://preview.redd.it/jv3uniz52vo51.gif?format=png8&s=9a4b9d2674e3ef51640097e11dcb59e979427a46", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
 
           wb.open("https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20")
 
@@ -621,7 +578,7 @@ while True:
 
 
     elif opt != [1, 2, 3, 4]:
-        RPC.update(state="He cant read", details="By unofficialdxnny", large_image="https://imgur.com/EHlrEAr.png", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
+        RPC.update(state="He cant read", details="By unofficialdxnny", large_image="https://preview.redd.it/jv3uniz52vo51.gif?format=png8&s=9a4b9d2674e3ef51640097e11dcb59e979427a46", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
 
         import getpass
         import time
