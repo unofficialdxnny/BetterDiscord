@@ -182,7 +182,7 @@ while True:
         RPC.update(state="Creating Theme", details="By unofficialdxnny", large_image="https://imgur.com/OGL0Ff2.png", large_text="Editing a CSS3 file", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
         os.system("cls")
         print(banner)
-        cwd = os.getcwd() 
+        cwd = input('Paste the themes directory path for BetterDiscord here')
         import sys
         import time
 
@@ -251,7 +251,7 @@ while True:
         print("")
         print("")
         
-        print("\033[93m" + name + ".css File has been created  ")
+        print("\033[93m" + name + "themes" + ".css File has been created  ")
 
         time.sleep(3)
 
