@@ -198,40 +198,6 @@ while True:
           
 
         print('')
-        
-          
-        print(':: Press enter when your mouse is over the discord icon on your taskbar ::')
-
-
-        kb.read_key('enter')
-        discord = pag.position()
-        time.sleep(2)
-        print(discord)
-
-
-
-        print(':: Press enter when your mouse is over the discord settings icon ::')
-
-        kb.read_key('enter')
-        settings = pag.position()
-        time.sleep(2)
-        print(settings)
-
-
-
-        print(':: Without scrolling down press enter when your mouse is over the Custom CSS tab ::')
-
-        kb.read_key('enter')
-        customcss = pag.position()
-        time.sleep(2)
-        print(customcss)
-
-        print(':: Press enter when your mouse is on the first line of the editor ::')
-
-        kb.read_key('enter')
-        line1 = pag.position()
-        time.sleep(2)
-        print(line1)
 
 
         print("")
