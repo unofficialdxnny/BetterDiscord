@@ -251,7 +251,7 @@ while True:
         print("")
         print("")
         
-        print("\033[93m" + name + "themes" + ".css File has been created  ")
+        print("\033[93m" + name + "themes.css File has been created  ")
 
         time.sleep(3)
 
@@ -388,7 +388,7 @@ while True:
 
         
 
-        with open(name + '.css', 'a') as f:
+        with open(name + 'theme.css', 'a') as f:
             f.write(f"""
             
 /**
