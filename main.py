@@ -468,7 +468,7 @@ while True:
         
     elif opt == 2:
         RPC.update(state="Setting Up", details="By unofficialdxnny", large_image="https://preview.redd.it/jv3uniz52vo51.gif?format=png8&s=9a4b9d2674e3ef51640097e11dcb59e979427a46", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
-        wb.open("https://betterdiscord.app")
+        os.system('choco install betterdiscord')
 
         
         
