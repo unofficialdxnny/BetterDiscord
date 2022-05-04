@@ -1,7 +1,7 @@
 # BetterDiscord ![Maintainer](https://img.shields.io/badge/maintainer-unofficialdxnny-blue)
 BetterDiscord is a terminal interface where you can make Discord themes quickly with no prior CSS knowledge
 
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) [![Windows](https://svgshare.com/i/ZhY.svg)](https://svgshare.com/i/ZhY.svg) [![macOS](https://svgshare.com/i/ZjP.svg)](https://svgshare.com/i/ZjP.svg) 
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) [![Windows](https://svgshare.com/i/ZhY.svg)](https://svgshare.com/i/ZhY.svg) [![macOS](https://svgshare.com/i/ZjP.svg)](https://svgshare.com/i/ZjP.svg) 
 
 
 
@@ -31,14 +31,3 @@ You are greeted with a small menu
  Option 4 Shows credits to our contributors
 
  
-## UPCOMING
-
-so soon i will add :
-
-save file directly to the themes directory
-
-preloaded themes
-
-adding a long script for all os
-
-
