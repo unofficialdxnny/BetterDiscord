@@ -7,7 +7,7 @@ import webbrowser as wb
 import sys
 import pyautogui as pag
 import win32gui, win32con
-
+import getpass
 
 
 from pypresence import Presence
@@ -163,6 +163,7 @@ t.start()
 time.sleep(5)
 done = True
 
+username = getpass.getuser()
 
 while True:
     RPC.update(state="Main Menu", details="By unofficialdxnny", large_image="https://preview.redd.it/jv3uniz52vo51.gif?format=png8&s=9a4b9d2674e3ef51640097e11dcb59e979427a46", large_text="Logo By Dx_Deathstrike", buttons=[{"label": "Github Repository", "url": "https://github.com/unofficialdxnny/BetterDiscord"}, {"label": "Owner Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
@@ -389,7 +390,7 @@ while True:
 
         
 
-        with open(name + '.theme.css', 'a') as f:
+        with open(f'C:/Users/{username}/AppData/Roaming/BetterDiscord/themes/{name} + '.theme.css', 'a') as f:
             f.write(f"""/**
  * @name {author}
  * @version {version}
